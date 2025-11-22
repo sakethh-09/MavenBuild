@@ -1,0 +1,13 @@
+sudo apt-get update
+sudo apt-get install docker.io
+sudo apt-get install git
+sudo apt-get install nano
+
+git clone https://github.com/sakethh-09/aws.git
+cd aws
+ls
+
+nano Dockerfile
+
+sudo docker build -t saketh .
+sudo docker run -d -p 80:80 saketh
